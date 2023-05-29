@@ -1,0 +1,231 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    font-size: 20px;
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 1px 6px white;
+    transition:  0.3s linear;
+}
+
+li a:hover{
+    border-radius: 8px;
+    font-size: 22px;
+    text-shadow: 0px 3px 10px white;
+}
+
+.contenedor {
+    padding-top: 50px;
+    height: 100vh;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 1px 8px white;
+    margin-left: 100px;
+    margin-top: 50px;
+    transition:  0.3s linear;
+    cursor: default;
+}
+
+.tituloProjects{
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 1px 8px white;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-top: 100px;
+    cursor:default;
+}
+
+.projects{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .5;
+    transition: .5s ease;
+}
+
+section img:hover{
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(100%);
+}
+
+.tituloSkills{
+    font-size: 60px;
+    text-align: left;
+    color: white;
+    text-shadow: 0px 1px 8px white;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    cursor:default;
+}
+
+.tituloSkillsH3{
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    text-shadow: 0px 1px 8px white;
+    margin-left: 100px;
+    margin-top: 0;
+    padding-top: 100px;
+    cursor:default;
+}
+.progress-bar {
+    margin-left: 100px;
+    margin-right: 400px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px rgb(255, 255, 255);
+  }
+  
+.progress {
+    box-shadow: 2px 4px 10px rgb(112, 106, 106);
+    background-color: rgb(255, 142, 3);
+    height: 20px;
+    border-radius: 6px;
+}
+
+.tituloInformation{
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 1px 8px white;
+    margin-left: 100px;
+    padding-top: 100px;
+    cursor:default;
+}
+
+.information {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.information img {
+    cursor: pointer;
+    flex: 0 0 auto; 
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    opacity: .5;
+    transition: .5s ease;
+}
+
+.information img:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 880px) {
+    .titulo {
+        font-size: 40px; 
+        margin-left: 20px; 
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 670px) {   
+    .titulo {
+        font-size: 40px;
+        margin-left: 20px; 
+        margin-top: 20px; 
+    }
+
+    .tituloProjects{
+        font-size: 40px;
+    }
+    section{
+        margin: 20px;
+    }
+     .tituloSkills{
+        font-size: 40px;
+    }
+    .tituloSkillsH3{
+        font-size: 25px;
+        margin-left: 100px;
+    }
+    .progress-bar {
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+      
+    .progress {
+        height: 15px;
+    }
+    .information img {
+        height: 150px; 
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {   
+    .titulo {
+        font-size: 30px;
+        margin-left: 10px; 
+        margin-top: 10px; 
+    }
+
+    li a{
+        font-size: 20px;
+        padding: 12px;
+    }
+    
+    li a:hover{
+        font-size: 22px;
+    }
+    
+    .tituloSkillsH3{
+        font-size: 20px;
+    }
+    .information img {
+        height: 100px; 
+        width: 100px;
+    }
+}
